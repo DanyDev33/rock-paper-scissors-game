@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daniel Hedima">
+    <meta name="description" content="This is the football trials page">
+    <title>Football Trials</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Football Trials</h1>
+    </header>
+
+    <main>
+        <section id="player-info">
+            <h2>Input in your information</h2>
+            <p>
+                <label for="name">Name</label>
+                <br>
+                <input id="name-input" type="text" placeholder="Enter your name" required>
+            </p>
+
+            <p>
+                <label for="number">Number</label>
+                <br>
+                <input id="num-input" type="text" placeholder="Enter your phone number" required>
+            </p>
+
+            <p>
+                <label for="message">Message</label>
+                <br>
+                <textarea name="player-info" id="player-input" required></textarea>
+            </p>
+
+            <p>
+                <button id="save-btn">Save Info</button>
+                <button id="info-btn">Registered Players</button>
+                <button id="delete-btn">Delete Players</button>
+            </p>
+        </section>
+
+        <section id="player-list-section">
+            <h2>Players List</h2>
+            <ul id="ul-el">
+
+            </ul>
+        </section>
+
+    </main>
+
+</body>
+
+
+<script src="index.js"></script>
+
+</html>

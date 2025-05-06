@@ -1,0 +1,148 @@
+/* || RESET */
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* || UTILITY CLASSES */
+.offscreen {
+    position: absolute;
+    left: -10000px;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.center {
+    text-align: center;
+}
+
+
+/* || GENERAL STYLES */
+
+body {
+    background-image: url('../img/pexels-polina-kovaleva-5717479.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+header {
+    display: inline-block;
+    background-image: url('../img/RockPaperScissor-2880x1620_Lede-768x432.jpg');
+    margin: 10px;
+    width: 90vw;
+    border-radius: 8px;
+    text-align: left;
+}
+
+h1 {
+    font-size: 18px;
+    display: inline-block;
+    color: white;
+    font-family: cursive;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    font-size: 20px;
+    text-align: left;
+    text-wrap: nowrap;
+    /* border-bottom: 1px solid white; */
+}
+
+label {
+    font-size: 12px;
+}
+
+p {
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: left;
+}
+
+
+/* || INDEPENDENT STYLES */
+#player-info, #player-list-section {
+    display: inline-block;
+    width: 90vw;
+    height: 500px;
+    background-color: black;
+    border-radius: 8px;
+    font-family: cursive;
+    margin-bottom: 10px;
+}
+
+#name-input, #num-input {
+    font-family: cursive;
+    width: 100%;
+    padding: 10px;
+    margin-top: 4px;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 8px;
+}
+
+#player-input {
+    font-family: cursive;
+    margin-top: 4px;
+    display: block;
+    width: 100%;
+    height: 150px;
+    resize: none;
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#save-btn, #info-btn, #delete-btn {
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    width: 20vw;
+    border-radius: 8px;
+    background-color: black;
+    font-family: cursive;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
