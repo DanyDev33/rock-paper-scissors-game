@@ -14,13 +14,13 @@ let playerScore = 0
 let computerScore = 0
 
 
-function disableButtons() {
+const disableButtons = () => {
     rockBtn.disabled = true
     paperBtn.disabled = true
     scissorsBtn.disabled = true
 }
 
-function enableButtons() {
+const enableButtons = () => {
     rockBtn.disabled = false
     paperBtn.disabled = false
     scissorsBtn.disabled = false
@@ -29,7 +29,7 @@ function enableButtons() {
 disableButtons()
 
 // This function ensures that the computer's choice is random.
-function computerChoiceFunction() {
+const computerChoiceFunction = () => {
     let randomPick = Math.floor(Math.random() * choices.length)
     computerChoice = choices[randomPick]
     computer.style.cssText = `
@@ -39,7 +39,7 @@ function computerChoiceFunction() {
 }
 
 // This function is called to determine the winner after the choices picked by the human and computer are compared.
-function determineWinner() {
+const determineWinner = () => {
     if (playerScore < 3 && computerScore < 3) {
         if (playerChoice === computerChoice) {
             message.textContent = `It's a draw. Score: Player ${playerScore} - Computer: ${computerScore}`
@@ -59,7 +59,7 @@ function determineWinner() {
 
 }
 
-function winner() {
+const winner = () => {
     if (playerScore === 3) {
         message.textContent = `You won the game 🎉! Player: ${playerScore} - Computer: ${computerScore}  `
         startBtn.disabled = false
@@ -98,7 +98,6 @@ rockBtn.addEventListener("click", function () {
     computerChoiceFunction()
     determineWinner()
 })
-
 
 // Paper button event listener, it is compared to the computer's choice when clicked and then the winner is determined.
 paperBtn.addEventListener("click", function () {
